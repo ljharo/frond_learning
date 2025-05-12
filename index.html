@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#8f7ac" />
+    <link rel="icon" type="image/jpeg"" href="images/images.jpeg" />
+    <title>Portafolio</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- h1 .... h6 -->
+      <h1>Portafolio</h1>
+      <!-- sirve para poner titulos -->
+
+      <nav>
+        <a href="#Experiencia">Experiencia</a>
+        <a href="#Proyectos">Proyectos</a>
+        <a href="#Preguntas">Preguntas Frecuentes</a>
+        <a href="#formulario">Formulario</a>
+        <a href="https://www.instagram.com"
+        target="_blank" 
+        rel="noreferrer"
+        >Instagram</a>
+
+        <!--target="_blank"  para que redirija a otra pagina abriendo otra pestana -->
+        <!-- rel="noreferrer" para no conpartir los datos de la pagina con la siguiente pagina -->
+
+        <!-- sirve para redirigir a una pagina especifica -->
+      </nav>
+      <!-- sirve para crear un menu de navegacion -->
+    </header>
+
+    <!-- <video controls src="https://www.youtube.com/watch?v=HYsz1hP0BFo"></video> -->
+    <!-- <video autoplay muted src="https://www.youtube.com/watch?v=HYsz1hP0BFo"></video> -->
+     <!-- <audio controls src="https://www.youtube.com/watch?v=HYsz1hP0BFo"></audio> -->
+
+      <dialog id="modal">
+        <h1>JODASE PRIMO</h1>
+        <button id="hide"> Close</button>
+    </dialog>
+    <button id="show">Ver mas informacion.</button>
+
+    <script>
+        window.show.addEventListener("click", () => {
+            window.modal.showModal()
+        })
+
+        window.hide.addEventListener("click", () => {
+            window.modal.close()
+        })
+
+
+    </script>
+
+    <main>
+      <!-- sirve para centrar el contenido principal de la pagina -->
+
+      <p>
+        +3 de experiencia como
+        <strong>ingeniero en software</strong>
+        <!-- sirve para poner en negrillas -->
+      </p>
+      <!-- sirve para poner parrafos -->
+
+      <h2 id="Experiencia"">Experiencia</h2>
+
+      <ul>
+        <li class="list-item"><strong>HI4AI</strong> - 2022</li>
+        <li class="list-item"><strong>Deloitte</strong> - 2021</li>
+        <li class="list-item"><strong>Chinchin</strong> - 2020</li>
+        <!--elemento de la lista -->
+      </ul>
+      <!-- sirve para crear una lista desordenada -->
+
+      <img
+        id="imagen"
+        width="250"
+        height="250"
+        title="Grace Hoper"
+        src="images/images.jpeg"
+        alt="una fotografia de Grace Hoper"
+      />
+      <!-- sirve para listar imagenes -->
+
+      <h2 id="Proyectos"">Proyectos Realizados</h2>
+
+      <aside>
+        <header>
+          <h3>Mis tecnologias favoritas</h3>
+        </header>
+
+        <ul>
+          <li>HTLM</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+        </ul>
+      </aside>
+      <!-- se utiliza para un contenido que esta separado del contenido principal -->
+
+      <section>
+        <article>
+          <header><h4>Sitio Web</h4></header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            exercitationem, fugiat minus molestiae aliquam cupiditate nisi sit
+            voluptatem, quia in, quasi soluta. Accusamus natus earum ipsa eaque
+            inventore dolore veritatis.
+          </p>
+          <footer>
+            <small> Tecnologias utilizadas: HTML, CSS, JavaScript. </small>
+          </footer>
+        </article>
+
+        <article>
+          <header><h4>Sitio Web</h4></header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            exercitationem, fugiat minus molestiae aliquam cupiditate nisi sit
+            voluptatem, quia in, quasi soluta. Accusamus natus earum ipsa eaque
+            inventore dolore veritatis.
+          </p>
+          <footer>
+            <small> Tecnologias utilizadas: HTML, CSS, JavaScript. </small>
+          </footer>
+        </article>
+
+        <article>
+          <header><h4>Sitio Web</h4></header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            exercitationem, fugiat minus molestiae aliquam cupiditate nisi sit
+            voluptatem, quia in, quasi soluta. Accusamus natus earum ipsa eaque
+            inventore dolore veritatis.
+          </p>
+          <footer>
+            <small> Tecnologias utilizadas: HTML, CSS, JavaScript. </small>
+          </footer>
+        </article>
+      </section>
+
+      <section id="Preguntas">
+        <h2>Preguntas Frecuentes</h2>
+        <details>
+            <summary>Que estudios tienes ?</summary>
+            <p>Estudie en la universidad alejandre de humboldt la carrera de ingenieria de informatica</p>
+        </details>
+        <details>
+            <summary>Donde trabajas ?</summary>
+            <p>En la oficina de la empresa</p>
+        </details>
+        <details>
+            <summary>Tu primo es pendejo ?</summary>
+            <p>Si y bastante, jodase primo</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Formulario de contacto</h2>
+        <form id="formulario" action="/" method="post">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div>
+                    <label>Correo:
+                        <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                    </label>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Informacion adicional</legend>
+                <div>
+                    <label>Correo:
+                        <input type="tel" id="teefono" name="telefono" placeholder="Ingrese su telefono" pattern="[0-9]{10}" required>
+                    </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros datos</legend>
+                <div>
+                    <label for="why">Por que nos quieres contactar ?</label>
+                    <div>
+                        <select name="why" id="why">
+                        <option value="1">Trabajo</option>
+                        <option value="2">Duda</option>
+                        <option value="3">Mas informacion</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="term">Aceptas los terminos y condiciones ?</label>
+                    <input type="checkbox" id="term" name="term" required>
+                </div>
+
+                <div>
+                    <datalist id="lenguajes"">
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="java"></option>
+                    </datalist>
+                    <label>
+                        Con que lenguaje de propgramacion quieres que te ayude
+                        <div>
+                            <input placeholder="..." list="lenguajes" name="lenguaje" required">
+                        </div>
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      Copyright 2023 - el portafolo mas bello del mundo hecho por alguien de
+      backend
+ 
+      <div>
+        <a href="mailto:harooo@gmial.com">Enviar un correo</a>
+        <a href="tel:+58414258693">Llamar por telefono</a>
+        <a href="whatsapp://send?phone=58414258693&text=Hola">Llamar por whatsapp</a>
+      </div>
+    </footer>
+  </body>
+</html>
