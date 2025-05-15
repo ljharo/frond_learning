@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/hacker.png" type="image/png" />
-    <link rel="stylesheet" href="curriculum.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -43,6 +43,15 @@
             </li>
           </ul>
         </nav>
+
+        <!-- boton para descargar cv -->
+        <a
+          href="documents/CV Luis Haro - EN.pdf"
+          download="CV Luis Haro.pdf"
+          class="download-btn"
+        >
+          <strong>Download CV</strong>
+        </a>
 
         <div class="social-container">
           <ul class="social-links">
@@ -148,15 +157,118 @@
 
         <section id="experience" class="section">
           <h2 class="section-title">Experience</h2>
-          <div class="section-content">
-            <!-- Experience content here -->
+          <div class="experience-container">
+            <details class="experience-item">
+              <summary class="experience-summary">
+                <a
+                  class="experience-link"
+                  href="https://www.pagochinchin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3>Pago Chinchin</h3>
+                </a>
+                <span class="experience-icon">+</span>
+              </summary>
+              <div class="experience-content">
+                <h4>QA (Quality analyst) - 2022</h4>
+                <p>
+                  responsible for guaranteeing the quality of the software by
+                  conducting manual and automated tests, error identification,
+                  documentation of results and collaboration with development
+                  equipment to improve processes and ensure that the product
+                  meets the required standards.
+                </p>
+              </div>
+            </details>
+
+            <details class="experience-item">
+              <summary class="experience-summary">
+                <a
+                  class="experience-link"
+                  href="https://www.deloitte.com/latam/es/about/story/nuestros-marketplaces/deloitte-venezuela.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3>Deloitte</h3>
+                </a>
+                <span class="experience-icon">+</span>
+              </summary>
+              <div class="experience-content">
+                <h4>Risk Analyst - 2023</h4>
+                <p>
+                  Identification and Evaluation Risks in IT systems, developing
+                  mitigation and coordinates audit strategies. The objective is
+                  to ensure that the organization complies with regulations and
+                  protects its assets, communicating findings and
+                  recommendations to senior management to improve risk
+                  management.
+                </p>
+              </div>
+            </details>
+
+            <details class="experience-item">
+              <summary class="experience-summary">
+                <a
+                  class="experience-link"
+                  href="https://hi4.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3>HI4AI</h3>
+                </a>
+                <span class="experience-icon">+</span>
+              </summary>
+              <div class="experience-content">
+                <h4>Backend AI Developer - 2023</h4>
+                <p>
+                  As Backend Developer, design and development the logic of the
+                  server and the databases that support the applications. I take
+                  care of creating APIS, optimizing performance and ensuring
+                  data security. I work in close collaboration with the Fronte
+                  team to ensure fluid and efficient integration.
+                </p>
+              </div>
+            </details>
           </div>
         </section>
 
         <section id="studies" class="section">
           <h2 class="section-title">Studies</h2>
-          <div class="section-content">
-            <!-- Studies content here -->
+          <div class="section-content studies-list">
+            <article class="study-item">
+              <div class="study-content">
+                <h3 class="study-title">Computer Engineering</h3>
+                <h4 class="study-institution">
+                  <a
+                    href="https://www.unihumboldt.edu.ve"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Universidad Alejandro de Humboldt • 2018 - 2022
+                  </a>
+                </h4>
+                <div class="study-dot"></div>
+                <div class="study-line"></div>
+              </div>
+            </article>
+
+            <article class="study-item">
+              <div class="study-content">
+                <h3 class="study-title">Master in Artificial Intelligence</h3>
+                <h4 class="study-institution">
+                  <a
+                    href="https://www.ceupe.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    CEUPE • 2023 - 2024
+                  </a>
+                </h4>
+                <div class="study-dot"></div>
+                <div class="study-line"></div>
+              </div>
+            </article>
           </div>
         </section>
 
